@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@layer base {
+  .link-hover {
+    @apply py-5 px-8 cursor-pointer rounded-lg transition-all duration-300 ease-in hover:bg-Charcoal-Gray hover:text-white;
+  }
+}
+
+/* Frame 35 */
+
+/* position: absolute;
+width: 522px;
+height: 453px;
+left: 82px;
+top: 509.5px;
+
+background: url(.png), #F9F9F9;
+border: 8px solid #FFFFFF; */
+
+/* Frame 40 */
+
+/* position: absolute;
+width: 522px;
+height: 453px;
+left: 526.5px;
+top: 804px;
+
+background: url(.png), #F9F9F9;
+border: 8px solid #FFFFFF; */
+
+/* Frame 41 */
+
+/* position: absolute;
+width: 522px;
+height: 453px;
+left: 610px;
+top: 351px;
+
+background: url(.png), #F9F9F9;
+border: 8px solid #FFFFFF; */
+
+/* Frame 42 */
+
+/* position: absolute;
+width: 522px;
+height: 453px;
+left: 1055px;
+top: 815.5px;
+
+background: url(.png), #F9F9F9;
+border: 8px solid #FFFFFF; */
+
+/* Frame 43 */
+
+/* position: absolute;
+width: 522px;
+height: 453px;
+left: 1117.5px;
+top: 351.5px;
+
+background: url(.png), #F9F9F9;
+border: 8px solid #FFFFFF; */
