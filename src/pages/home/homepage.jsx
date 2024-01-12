@@ -2,9 +2,6 @@ import { Link } from "react-router-dom";
 import { Container } from "../../components/container";
 import { Navigation } from "../../components/navigation";
 import { Flex, Side } from "../../components/basic/flex";
-import { Form, SearchInput } from "../../components/searchinput";
-import { CiSearch } from "react-icons/ci";
-import { IoMdContact } from "react-icons/io";
 import { HeroSection } from "./herosection";
 import { NewArrival } from "./newarrival";
 import { OurProduct } from "./product";
@@ -16,7 +13,7 @@ import { Footer } from "./footer";
 export const HomePage = () => {
   return (
     <>
-      <Container className="com:container com:mx-auto mb-20  ">
+      <Container className="com:container com:mx-auto mb-20 mt-5 sm:px-5">
         <Flex side={Side.Row} className="justify-between items-center">
           <div>
             <h1 className="text-primary text-2xl font-bold">
@@ -25,12 +22,6 @@ export const HomePage = () => {
           </div>
 
           <Navigation />
-
-          <Form className="relative flex justify-center items-center">
-            <CiSearch className="absolute top-3  ml-3 text-xl" />
-            <SearchInput type="text" placeholder="search for wears" />
-          </Form>
-          <IoMdContact className="text-2xl" />
         </Flex>
       </Container>
       <HeroSection />

@@ -24,7 +24,7 @@ export const Testimonials = () => {
           {testimonial.map((testimonials) => (
             <div
               key={testimonials.id}
-              className="bg-Plantium sm:flex  sm:flex-col-reverse pt-5 pb-20 px-5"
+              className="bg-Plantium sm:flex  sm:flex-col-reverse pt-5 pb-20 px-5 sm:pb-5 sm:pt-10"
             >
               <div className="flex items-center gap-5 mb-10 sm:justify-center ">
                 <img src={testimonials.img} alt="" className="object-contain" />
@@ -38,12 +38,12 @@ export const Testimonials = () => {
             </div>
           ))}
         </div>
-        <div className="flex gap-3 justify-end items-center">
+        <div className="flex gap-x-3 justify-end items-center sm:justify-center sm:gap-x-8">
           <Button>
-            <Bs.BsArrowLeftShort className="border border-Charcoal-Gray rounded-full hover:bg-Charcoal-Gray hover:text-white hover:font-bold" />
+            <Bs.BsArrowLeftShort className="border border-Charcoal-Gray rounded-full hover:bg-Charcoal-Gray hover:text-white hover:font-bold sm:text-3xl" />
           </Button>
           <Button>
-            <Bs.BsArrowRightShort className="border border-Charcoal-Gray rounded-full hover:bg-Charcoal-Gray hover:text-white hover:font-bold" />
+            <Bs.BsArrowRightShort className="border border-Charcoal-Gray rounded-full hover:bg-Charcoal-Gray hover:text-white hover:font-bold sm:text-3xl" />
           </Button>
         </div>
       </Container>

@@ -8,10 +8,10 @@ import { IconObject } from "../../assets/icons/IconObject";
 export const Footer = () => {
   return (
     <footer className="bg-Charcoal-Gray text-white py-20">
-      <Container className="container mx-auto">
+      <Container className="com:container com:mx-auto sm:px-5">
         {/* nav one */}
-        <Flex side={Side.Row} className="justify-between mb-16">
-          <nav>
+        <Flex side={Side.Row} className="justify-between mb-16 sm:flex-wrap">
+          <nav className="sm:mb-12">
             <h3 className="font-bold mb-5">Product</h3>
             <ul className="font-light leading-loose">
               <li>
@@ -73,16 +73,16 @@ export const Footer = () => {
           </nav>
 
           {/* form */}
-          <Container className="bg-white  py-8 px-10 w-96">
-            <Flex side={Side.Column} className="justify-center ">
+          <Container className="bg-white  py-8 px-10 w-96 sm:ml-5">
+            <Flex side={Side.Column} className="justify-center">
               <h3 className="font-bold mb-5 text-Charcoal-Gray">Subscribe</h3>
               <Form>
                 <div className="relative flex">
                   <SearchInput
                     placeholder="Email address"
-                    className="rounded-md border-Charcoal-Gray bg-white text-start pl-5 relative"
+                    className="rounded-md border-Charcoal-Gray sm:w-full bg-white text-start pl-5 relative"
                   />
-                  <Bs.BsArrowRightShort className="h-full absolute top-0 right-20  w-10 bg-Charcoal-Gray text-white rounded-tr-md rounded-br-md" />
+                  <Bs.BsArrowRightShort className="h-full absolute top-0 right-20  w-10 bg-Charcoal-Gray text-white rounded-tr-md rounded-br-md sm:right-0" />
                 </div>
               </Form>
               <p className="text-Charcoal-Gray mt-5 font-light ">
@@ -96,20 +96,23 @@ export const Footer = () => {
         <hr />
 
         <Container className="mt-10">
-          <Flex side={Side.Row} className="justify-between">
+          <Flex
+            side={Side.Row}
+            className="justify-between items-center sm:flex-wrap"
+          >
             <div>
-              <h1 className=" text-2xl font-bold">
+              <h1 className=" text-2xl font-bold ">
                 <Link to={"/"}>UrbanStyle</Link>
               </h1>
             </div>
             <div>
-              <ul className="flex gap-10 text-sm items-center">
+              <ul className="flex gap-x-10 text-sm items-center sm:flex-wrap sm:gap-x-5 ">
                 <li>Terms</li>
                 <li>Privacy</li>
                 <li>Cookies</li>
               </ul>
             </div>
-            <div className="flex items-center gap-x-5">
+            <div className="flex items-center gap-x-5 sm:mt-5 sm:justify-center">
               {Object.keys(IconObject).map((index) => (
                 <div
                   className="border border-white rounded-full p-2 text-xs"

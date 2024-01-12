@@ -20,6 +20,7 @@ export default {
         Sconce: "#5E5E5E",
         DimGray: "#2A2A2A",
         Plantium: "#F5F5F5",
+        LightGray: "#d3d3d3",
       },
     },
   },

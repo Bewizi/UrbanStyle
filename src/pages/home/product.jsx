@@ -17,7 +17,7 @@ export const OurProduct = () => {
             Let's find the best outfit for you
           </p>
         </Flex>
-        <div className="border-2 rounded-xl py-2 mb-10">
+        <div className="border-2 rounded-xl py-2 mb-10 sm:border-none">
           <ul>
             <Flex
               side={Side.Row}
@@ -32,13 +32,14 @@ export const OurProduct = () => {
               <li className="link-hover">
                 <Link>Jacket</Link>
               </li>
-              <li className="link-hover">
+
+              <li className="link-hover sm:hidden">
                 <Link>Footwear</Link>
               </li>
-              <li className="link-hover">
+              <li className="link-hover sm:hidden">
                 <Link>Cap</Link>
               </li>
-              <li className="link-hover">
+              <li className="link-hover sm:hidden">
                 <Link>Jeans</Link>
               </li>
             </Flex>

@@ -9,7 +9,7 @@ img {
 
 @layer base {
   .link-hover {
-    @apply py-5 px-8 cursor-pointer rounded-lg transition-all duration-300 ease-in hover:bg-Charcoal-Gray hover:text-white;
+    @apply py-5 px-8 cursor-pointer rounded-lg transition-all duration-300 ease-in font-semibold hover:bg-Charcoal-Gray hover:text-white;
   }
   .btn-sm-screen {
     @apply bg-Charcoal-Gray text-white;
