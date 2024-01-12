@@ -51,7 +51,7 @@ export const Navigation = () => {
 
         {/* mobile to tablet */}
         {menuOpen && (
-          <div className="sm:bg-LightGray/80 sm:absolute sm:top-0 sm:left-0 sm:w-1/2">
+          <div className="sm:bg-LightGray/80 sm:absolute sm:top-0 sm:left-0 sm:w-56">
             <ul className="text-sm text-primary sm:font-bold sm:text-xl sm:mb-10 sm:mt-5 ">
               <Flex
                 side={Side.Row}
@@ -74,10 +74,6 @@ export const Navigation = () => {
                 </li>
               </Flex>
             </ul>
-            <Form className="relative flex justify-center items-center sm:mb-10">
-              <CiSearch className="absolute top-3 left-0 ml-3 text-xl" />
-              <SearchInput type="text" placeholder="search for wears" />
-            </Form>
             <div className="sm:flex sm:items-center sm:justify-center sm:mb-5 ">
               <IoMdContact className="text-4xl" />
             </div>
