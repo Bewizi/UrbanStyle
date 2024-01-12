@@ -15,13 +15,13 @@ export const HeroSection = () => {
   };
   return (
     <>
-      <Container className="container mx-auto">
+      <Container className="com:container com:mx-auto">
         <Flex side={Side.Column} className="items-center justify-center">
           <div className="flex flex-col items-center justify-center mb-10">
-            <h1 className="text-5xl text-center font-bold text-Charcoal-Gray leading-tight mb-5">
+            <h1 className="text-5xl text-center font-bold text-Charcoal-Gray leading-tight mb-5 sm:px-5 sm:text-4xl">
               Discover your Urban Style: Where <br /> trends meets style
             </h1>
-            <p className="text-Dark-Gray">
+            <p className="text-Dark-Gray font-light sm:text-center sm:text-xs">
               Explore your gateway to a world of contemporary fashion, where
               every <br /> garments tells a story of urban resilience, street
               attitude and modern chic.
@@ -41,7 +41,7 @@ export const HeroSection = () => {
         </Flex>
       </Container>
       <Container className="mb-40">
-        <Flex side={Side.Row} className=" justify-evenly flex-wrap">
+        <Flex side={Side.Row} className=" justify-evenly flex-wrap sm:gap-y-10">
           {imageSlider.map((image, i) => (
             <img
               src={image.img}

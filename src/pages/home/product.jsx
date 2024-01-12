@@ -8,7 +8,7 @@ import { Fa, Io5 } from "../../assets";
 export const OurProduct = () => {
   return (
     <>
-      <Container className="container mx-auto mb-40">
+      <Container className="com:container com:mx-auto mb-40 sm:mt-[35rem]">
         <Flex side={Side.Column} className="justify-center items-center">
           <h1 className="text-4xl font-bold text-Charcoal-Gray leading-tight mb-5">
             Our Products
@@ -44,14 +44,14 @@ export const OurProduct = () => {
             </Flex>
           </ul>
         </div>
-        <Container className="grid grid-cols-3 gap-5 mb-12">
+        <Container className="grid grid-cols-3 gap-5 mb-12 sm:grid-cols-2 sm:gap-y-10 sm:px-2">
           {products.map((product, index) => (
             <div key={index}>
-              <div className="relative mb-3">
+              <div className="relative mb-3 bg-[#F5F5F5] rounded-lg sm:pt-0">
                 <img
                   src={product.img}
                   alt=""
-                  className="object-cover w-80 h-[29rem] bg-[#F5F5F5] pt-10 rounded-lg"
+                  className="object-cover w-80 h-[29rem] sm:w-40 sm:h-40 pt-10  sm:px-5 "
                 />
                 <Io5.IoHeartOutline className="absolute top-2 right-5 text-4xl bg-white p-2 rounded-full" />
               </div>
@@ -61,7 +61,7 @@ export const OurProduct = () => {
                 </Link>
                 <p className="font-bold">{product.price}</p>
               </div>
-              <h3 className="font-bold text-2xl text-wrap mb-3">
+              <h3 className="font-bold text-2xl text-wrap mb-3 sm:text-base">
                 {product.description}
               </h3>
               <div className="flex  items-center gap-3">

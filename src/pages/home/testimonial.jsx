@@ -20,16 +20,19 @@ export const Testimonials = () => {
         </Flex>
       </Container>
       <Container>
-        <div className=" flex gap-x-5 mb-10">
+        <div className=" flex gap-x-5 sm:gap-10  mb-10 sm:flex-col-reverse ">
           {testimonial.map((testimonials) => (
-            <div key={testimonials.id} className="bg-Plantium pt-5 pb-20 px-5">
-              <div className="flex items-center gap-5 mb-10 ">
+            <div
+              key={testimonials.id}
+              className="bg-Plantium sm:flex  sm:flex-col-reverse pt-5 pb-20 px-5"
+            >
+              <div className="flex items-center gap-5 mb-10 sm:justify-center ">
                 <img src={testimonials.img} alt="" className="object-contain" />
-                <p className="font-bold text-Charcoal-Gray">
+                <p className="font-bold text-Charcoal-Gray sm:text-center">
                   {testimonials.name}
                 </p>
               </div>
-              <blockquote className="font-light text-Gunmetal">
+              <blockquote className="font-light text-Gunmetal sm:mb-16">
                 {testimonials.review}
               </blockquote>
             </div>

@@ -12,17 +12,17 @@ import {
 
 export const CheckOutProcess = () => {
   return (
-    <Container className="container mx-auto mb-28">
+    <Container className="com:container com:mx-auto mb-28 sm:px-10">
       <Flex side={Side.Column} className="justify-center items-center">
-        <h1 className="text-4xl font-bold text-Charcoal-Gray leading-tight mb-5">
+        <h1 className="text-4xl font-bold sm:text-center sm:text-2xl text-Charcoal-Gray leading-tight mb-5">
           CheckOut Process
         </h1>
-        <p className="text-Gunmetal mb-10">
+        <p className="text-Gunmetal mb-10 sm:text-center font-light">
           Follow these 6 steps to purchase and get your item delivered to you
         </p>
       </Flex>
       <Container>
-        <div className="grid grid-cols-3 gap-5  ">
+        <div className="grid grid-cols-3 gap-5 sm:grid-cols-1 ">
           {/* cartreview */}
           <div className="bg-[#F5F5F5] flex flex-col items-center justify-center py-10 px-5 ">
             <span className="text-Charcoal-Gray border border-Charcoal-Gray rounded-full text-lg p-2 mb-5">

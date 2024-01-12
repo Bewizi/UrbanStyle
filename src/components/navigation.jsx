@@ -3,7 +3,7 @@ import { Flex, Side } from "./basic/flex";
 
 export const Navigation = () => {
   return (
-    <nav>
+    <nav className="sm:hidden">
       <ul className="text-sm text-primary">
         <Flex side={Side.Row} className="gap-14 ">
           <li>

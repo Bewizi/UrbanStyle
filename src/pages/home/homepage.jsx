@@ -16,7 +16,7 @@ import { Footer } from "./footer";
 export const HomePage = () => {
   return (
     <>
-      <Container className="container mx-auto mb-20">
+      <Container className="com:container com:mx-auto mb-20  ">
         <Flex side={Side.Row} className="justify-between items-center">
           <div>
             <h1 className="text-primary text-2xl font-bold">
