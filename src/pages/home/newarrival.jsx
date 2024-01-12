@@ -25,34 +25,34 @@ export const NewArrival = () => {
             </div>
           </Flex>
         </Container>
-        <div className="relative com:container com:mx-auto sm:px-5">
+        <div className="relative com:container com:mx-auto ">
           <img
             src={Frame35}
             alt=""
             className="w-96 h-96 mt-96 object-cover sm:hidden"
           />
-          <div className="flex absolute -top-48 sm:top-0 sm:ml-5 ml-96 z-10 sm:z-0 ">
+          <div className="flex absolute -top-48 sm:top-0 sm:ml-2 ml-96 z-10 sm:z-0 ">
             <img
               src={Frame41}
               alt=""
-              className="w-96 h-96 sm:w-52 sm:h-52 object-cover"
+              className="w-96 h-96 sm:w-48 sm:h-48 object-cover"
             />
             <img
               src={Frame43}
               alt=""
-              className="w-96 h-96 sm:w-52 sm:h-52 object-cover"
+              className="w-96 h-96 sm:w-48 sm:h-48 object-cover"
             />
           </div>
-          <div className="flex absolute top-48 ml-80 sm:top-52 sm:ml-2 ">
+          <div className="flex absolute top-48 ml-80 sm:top-[12.5rem] sm:ml-0 ">
             <img
               src={Frame40}
               alt=""
-              className="w-96 h-96 object-cover  sm:w-52 sm:h-52"
+              className="w-96 h-96 object-cover  sm:w-48 sm:h-48"
             />
             <img
               src={Frame42}
               alt=""
-              className="w-96 h-96 object-cover sm:w-52 sm:h-52 "
+              className="w-96 h-96 object-cover sm:w-48 sm:h-48"
             />
           </div>
         </div>

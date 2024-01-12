@@ -14,14 +14,48 @@ export const Navigation = () => {
     // console.log(openMenu);
   };
   return (
-    <nav className=" flex items-center">
-      <Container className="com:flex items-center gap-x-10  mcom:hidden  tab:hidden  ">
+    <>
+      <nav className=" flex items-center">
+        {/* lagscreen */}
+        <Container className="sm:hidden tab:hidden mcom:hidden flex justify-between items-center gap-x-10">
+          <ul className="text-sm text-primary sm:font-bold sm:text-xl sm:mb-10 sm:mt-5 ">
+            <Flex
+              side={Side.Row}
+              className="gap-14 sm:gap-y-10 sm:flex-col items-center justify-center"
+            >
+              <li>
+                <Link to={"/menswear"}>Men</Link>
+              </li>
+              <li>
+                <Link to={"/womenswear"}>Women</Link>
+              </li>
+              <li>
+                <Link to={"/footwears"}>Footwears</Link>
+              </li>
+              <li>
+                <Link to={"/accessories"}>Accessories</Link>
+              </li>
+              <li>
+                <Link to={"/sales"}>Sales</Link>
+              </li>
+            </Flex>
+          </ul>
+          <Form className="relative flex justify-center items-center sm:mb-10">
+            <CiSearch className="absolute top-3 left-0 ml-3 text-xl" />
+            <SearchInput type="text" placeholder="search for wears" />
+          </Form>
+          <div className="sm:flex sm:items-center sm:justify-center sm:mb-5 ">
+            <IoMdContact className="text-4xl" />
+          </div>
+        </Container>
+
+        {/* mobile to tablet */}
         {menuOpen && (
-          <div className="sm:bg-LightGray/80   sm:absolute sm:top-0 sm:left-0 sm:w-1/2  com:flex items-center gap-x-10  mcom:hidden  tab:hidden">
-            <ul className="text-sm text-primary sm:font-bold sm:text-xl sm:mb-10 sm:mt-5">
+          <div className="sm:bg-LightGray/80 sm:absolute sm:top-0 sm:left-0 sm:w-1/2">
+            <ul className="text-sm text-primary sm:font-bold sm:text-xl sm:mb-10 sm:mt-5 ">
               <Flex
                 side={Side.Row}
-                className="gap-14 sm:gap-y-10 sm:flex-col items-center justify-center  "
+                className="gap-14 sm:gap-y-10 sm:flex-col items-center justify-center"
               >
                 <li>
                   <Link to={"/menswear"}>Men</Link>
@@ -41,7 +75,7 @@ export const Navigation = () => {
               </Flex>
             </ul>
             <Form className="relative flex justify-center items-center sm:mb-10">
-              <CiSearch className="absolute top-3 left-0 ml-3 text-xl " />
+              <CiSearch className="absolute top-3 left-0 ml-3 text-xl" />
               <SearchInput type="text" placeholder="search for wears" />
             </Form>
             <div className="sm:flex sm:items-center sm:justify-center sm:mb-5 ">
@@ -49,10 +83,10 @@ export const Navigation = () => {
             </div>
           </div>
         )}
-      </Container>
-      <div className="text-4xl  com:hidden" onClick={openMenu}>
+      </nav>
+      <div className="text-4xl com:hidden" onClick={openMenu}>
         <Md.MdMenu />
       </div>
-    </nav>
+    </>
   );
 };

@@ -47,7 +47,7 @@ export const HeroSection = () => {
               src={image.img}
               alt={image.alt}
               key={i}
-              className="hover:scale-105 transition-all duration-300"
+              className="hover:scale-105 transition-all duration-300 sm:w-80"
             />
           ))}
         </Flex>
