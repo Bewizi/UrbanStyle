@@ -2,12 +2,12 @@ import { Form, Link } from "react-router-dom";
 import { Container } from "../../components/container";
 import { Navigation } from "../../components/navigation";
 import { Flex, Side } from "../../components/basic/flex";
-import { HeroSection } from "./herosection";
-import { NewArrival } from "./newarrival";
-import { OurProduct } from "./product";
-import { CheckOutProcess } from "./process";
-import { HotSeason } from "./hotseason";
-import { Testimonials } from "./testimonial";
+import { HeroSection } from "../sections/herosection";
+import { NewArrival } from "../sections/newarrival";
+import { OurProduct } from "../sections/product";
+import { CheckOutProcess } from "../sections/process";
+import { HotSeason } from "../sections/hotseason";
+import { Testimonials } from "../sections/testimonial";
 import { Footer } from "./footer";
 import { CiSearch } from "react-icons/ci";
 import { SearchInput } from "../../components/searchinput";
@@ -25,7 +25,7 @@ export const HomePage = () => {
           />
         </Form>
       </div>
-      <Container className="com:container com:mx-auto mb-20 mt-0 sm:px-5">
+      <Container className="com:container com:mx-auto mb-20 mt-5 sm:px-5">
         <Flex side={Side.Row} className="justify-between items-center">
           <div>
             <h1 className="text-primary text-2xl font-bold">

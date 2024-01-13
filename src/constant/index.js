@@ -1,5 +1,7 @@
 import {
   ColourfulShirt,
+  DragonTshirt,
+  ElegantMinding,
   Ellipse1,
   Ellipse2,
   Ellipse3,
@@ -10,8 +12,12 @@ import {
   HandsomeStylish,
   ManInBlack,
   ManInWhite,
+  ManOrangeTshirt,
   ManPosing,
+  Minimalist,
   Tshirt,
+  YoungMaleRedShirt,
+  YoungManWithAfro,
 } from "../assets";
 
 export const imageSlider = [
@@ -44,7 +50,7 @@ export const products = [
     caterogy: "Men",
     price: "$19.99",
     description: "Vintage logo graphics tee",
-    icon: "icon",
+    alt: "Studio shot of unconfident embarrassed young man with stubble in colourful shirt feels confused ",
     rate: "4.7",
     reviewa: "(120Reviews)",
   },
@@ -54,7 +60,7 @@ export const products = [
     caterogy: "Women",
     price: "$30.99",
     description: "Classic Black long-sleeve",
-    icon: "icon",
+    alt: "Man in black sweater and black bucket hat youth apparel shoot",
     rate: "5.0",
     reviewa: "(200Reviews)",
   },
@@ -64,7 +70,7 @@ export const products = [
     caterogy: "men",
     price: "$30.99",
     description: "Comfortable white round neck",
-    icon: "icon",
+    alt: "Young man in white t-shirt and black pants holding hands on waist and looking serious",
     rate: "5.0",
     reviewa: "(200Reviews)",
   },
@@ -74,7 +80,7 @@ export const products = [
     caterogy: "Men",
     price: "$19.99",
     description: "Vintage logo graphics tee",
-    icon: "icon",
+    alt: "Young handsome man posing in quarry",
     rate: "4.7",
     reviewa: "(200Reviews)",
   },
@@ -84,7 +90,7 @@ export const products = [
     caterogy: "Unisex",
     price: "$30.99",
     description: "Classic Black long-sleeve",
-    icon: "icon",
+    alt: "T-shirt painting indoors still life",
     rate: "5.0",
     reviewa: "(200Reviews)",
   },
@@ -94,50 +100,61 @@ export const products = [
     caterogy: "men",
     price: "$30.99",
     description: "Comfortable white round neck",
-    icon: "icon",
+    alt: "Portrait of handsome confident stylish hipster lambersexual modelman dressed in over size tshirt and jeans fashion male",
     rate: "5.0",
     reviewa: "(200Reviews)",
   },
 ];
 
-export const checkout = [
+export const shirts = [
   {
     id: 1,
-    // icon: <FaStar />,
-    title: "Cart Review",
-    description:
-      "Upon clicking the check out icon you will be taken to the cart review page where you can review items on your cart, update qualities, or remove items if needed then you will also see the total cost and any applicable discounts.",
+    img: DragonTshirt,
+    price: `${"$9.5"}`,
+    name: "Baseball shirt",
+    discription: "Duotone Thunder Dragons Baseball Design",
+    alt: "duotone-thunder-dragons-baseball-t-shirt-design",
   },
-  // {
-  //   id: 2,
-  //   title: "Shipping Information",
-  //   description:
-  //     "After reviewing the cart, you click ‘proceed to shipping’ then you are prompted to provide shipping information, including name, address and contact details and then you select your shipping method(e.g standard, express) and enter any special information.",
-  // },
-  // {
-  //   id: 3,
-  //   title: "Payment",
-  //   description:
-  //     "After confirming shipping details, you click ‘Proceed to payment’ and enter your payment information, including credit card details or other payment methods.",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Order Review",
-  //   description:
-  //     "Upon successful payment information input, you are taken to order review page and there you can see a summary of your order, including items, shipping details and total cost. In this page you review and confirm your order.",
-  // },
-  // {
-  //   id: 5,
-  //   title: "Order Confirmation",
-  //   description:
-  //     "After confirming your order you click ‘Place Order’ and then you receive an order confirmation page with an order number and details. An order confirmation email is also sent to your provided email.",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Account Creation",
-  //   description:
-  //     "After order completion you have the option to create an account or proceed asa guest",
-  // },
+  {
+    id: 2,
+    img: ElegantMinding,
+    price: `${"$8.9"}`,
+    name: "Elegant MInd",
+    discription: "Elegant Minding Small Business Owner T-shirt",
+    alt: "elegant-minding-small-business-owner-t-shirt",
+  },
+  {
+    id: 3,
+    img: ManOrangeTshirt,
+    price: `${"$12"}`,
+    name: "Orange shirt",
+    discription: "Front View Man Posing Studio",
+    alt: "front-view-man-posing-studio",
+  },
+  {
+    id: 4,
+    img: Minimalist,
+    price: `${"$5"}`,
+    name: "Big Dream Shirt",
+    discription: "Minimalist Small Business Big Dreams T-shirt",
+    alt: "minimalist-small-business-big-dreams-t-shirt",
+  },
+  {
+    id: 5,
+    img: YoungMaleRedShirt,
+    price: `${"$11.5"}`,
+    name: "Red shirt",
+    discription: "front view young Male Red-shirt",
+    alt: "front-view-young-male-red-shirt-black-wall",
+  },
+  {
+    id: 6,
+    img: YoungManWithAfro,
+    price: `${"$10.5"}`,
+    name: "Clean White Shirt",
+    discription: "portrait young man with afro dreadlocks hairstyle",
+    alt: "portrait-young-man-with-afro-dreadlocks-hairstyle",
+  },
 ];
 
 export const testimonial = [

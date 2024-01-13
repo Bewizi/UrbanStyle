@@ -7,6 +7,7 @@ import Frame40 from "../assets/images/Frame 40.png";
 import Frame41 from "../assets/images/Frame 41.png";
 import Frame42 from "../assets/images/Frame 42.png";
 import Frame43 from "../assets/images/Frame 43.png";
+// Our Product Category
 import ManInBlack from "../assets/images/Man in black sweater.png";
 import ManInWhite from "../assets/images/Young man in white t-shirt.png";
 import ColourfulShirt from "../assets/images/Studio shot of unconfident embarrassed young man.png";
@@ -14,9 +15,11 @@ import ManPosing from "../assets/images/Young handsome man posing in quarry.png"
 import Tshirt from "../assets/images/T-shirt painting indoors still life.png";
 import HandsomeStylish from "../assets/images/Portrait of handsome confident stylish.png";
 import SensitiveMan from "../assets/images/Young and sensitive man thinking.png";
+// Testimoninal
 import Ellipse1 from "../assets/images/Ellipse 1.png";
 import Ellipse2 from "../assets/images/Ellipse 2.png";
 import Ellipse3 from "../assets/images/Ellipse 3.png";
+// Icons
 import * as Ci from "react-icons/ci";
 import * as Go from "react-icons/go";
 import * as Io5 from "react-icons/io5";
@@ -24,7 +27,17 @@ import * as Fa from "react-icons/fa";
 import * as Bs from "react-icons/bs";
 import * as Md from "react-icons/md";
 import * as Tb from "react-icons/tb";
+
+// shirts
+import DragonTshirt from "../assets/images/shirt/duotone-thunder-dragons-baseball-t-shirt-design.png";
+import ElegantMinding from "../assets/images/shirt/elegant-minding-small-business-owner-t-shirt.png";
+import ManOrangeTshirt from "./images/shirt/front-view-man-posing-studio.png";
+import Minimalist from "./images/shirt/minimalist-small-business-big-dreams-t-shirt.png";
+import YoungMaleRedShirt from "./images/shirt/front-view-young-male-red-shirt-black-walljpg.png";
+import YoungManWithAfro from "./images/shirt/portrait-young-man-with-afro-dreadlocks-hairstyle.png";
+
 export {
+  // icons
   Ci,
   Go,
   Io5,
@@ -32,6 +45,8 @@ export {
   Bs,
   Md,
   Tb,
+
+  // herosection
   Frame28,
   Frame29,
   Frame30,
@@ -41,9 +56,13 @@ export {
   Frame41,
   Frame42,
   Frame43,
+
+  // testimonial image
   Ellipse1,
   Ellipse2,
   Ellipse3,
+
+  // products
   ManInBlack,
   ManInWhite,
   ColourfulShirt,
@@ -51,4 +70,12 @@ export {
   Tshirt,
   HandsomeStylish,
   SensitiveMan,
+
+  //shirt category
+  DragonTshirt,
+  ElegantMinding,
+  ManOrangeTshirt,
+  Minimalist,
+  YoungMaleRedShirt,
+  YoungManWithAfro,
 };

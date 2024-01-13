@@ -6,6 +6,7 @@ import { Accessories } from "../pages/accessoriespage";
 import { FootWears } from "../pages/footwearpage";
 import { HomePage } from "../pages/home/homepage";
 import { MensWear } from "../pages/menswear";
+import { Shirts } from "../pages/products/shirts";
 import { Sales } from "../pages/sales";
 import { WomensWear } from "../pages/womenswear ";
 
@@ -36,6 +37,10 @@ export const routes = [
       {
         path: "/sales",
         element: <Sales />,
+      },
+      {
+        path: "/shirts",
+        element: <Shirts />,
       },
       {
         path: "/products",

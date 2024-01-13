@@ -73,7 +73,7 @@ export const Footer = () => {
           </nav>
 
           {/* form */}
-          <Container className="bg-white  py-8 px-10 w-96 sm:ml-5">
+          <Container className="bg-white  py-8 px-10 w-96 sm:w-full">
             <Flex side={Side.Column} className="justify-center">
               <h3 className="font-bold mb-5 text-Charcoal-Gray">Subscribe</h3>
               <Form>
