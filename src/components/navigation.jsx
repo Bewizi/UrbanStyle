@@ -51,7 +51,7 @@ export const Navigation = () => {
 
         {/* mobile to tablet */}
         {menuOpen && (
-          <div className="sm:bg-LightGray/80 sm:absolute sm:top-0 sm:left-0 sm:w-56">
+          <div className="sm:bg-LightGray/80 sm:absolute sm:top-0 sm:left-0 sm:w-56  ">
             <ul className="text-sm text-primary sm:font-bold sm:text-xl sm:mb-10 sm:mt-5 ">
               <Flex
                 side={Side.Row}

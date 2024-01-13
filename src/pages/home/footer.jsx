@@ -58,7 +58,7 @@ export const Footer = () => {
             <h3 className="font-bold mb-5">Company</h3>
             <ul className="font-light leading-loose">
               <li>
-                <Link>About Us</Link>
+                <Link to={"/aboutus"}>About Us</Link>
               </li>
               <li>
                 <Link>Careers</Link>

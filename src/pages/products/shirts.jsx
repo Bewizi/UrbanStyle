@@ -78,6 +78,11 @@ export const Shirts = () => {
             ))}
           </div>
         </Container>
+        <div className="flex items-center justify-center mb-20">
+          <Link className="border border-[#2A2A2A] text-lg text-Charcoal-Gray py-2 px-5 rounded-lg">
+            See More
+          </Link>
+        </div>
       </div>
 
       {/* footer  */}

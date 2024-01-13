@@ -2,6 +2,7 @@
 
 import Product from "../components/product";
 import Products from "../components/products";
+import { AboutUS } from "../pages/aboutus";
 import { Accessories } from "../pages/accessoriespage";
 import { FootWears } from "../pages/footwearpage";
 import { HomePage } from "../pages/home/homepage";
@@ -41,6 +42,10 @@ export const routes = [
       {
         path: "/shirts",
         element: <Shirts />,
+      },
+      {
+        path: "/aboutus",
+        element: <AboutUS />,
       },
       {
         path: "/products",
