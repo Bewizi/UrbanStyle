@@ -8,10 +8,16 @@ import { Footer } from "../home/footer";
 import { shirts } from "../../constant";
 import { Fa } from "../../assets";
 import { Button } from "../../components/button";
+import { MoreShirt } from "./moreshirts";
 
 export const Shirts = () => {
   const [isclicked, setIsClicked] = useState(false);
   const [clicked, setClicked] = useState(false);
+  const [seeMore, setSeeMore] = useState(false);
+
+  const toggleSeeMore = () => {
+    setSeeMore(!seeMore);
+  };
   const handleClick = () => {
     setIsClicked(!isclicked);
   };
@@ -52,7 +58,7 @@ export const Shirts = () => {
                     <img
                       src={shirt.img}
                       alt={shirt.alt}
-                      className="object-cover  h-60"
+                      className="object-cover h-60"
                     />
                   </div>
                 </div>
@@ -77,11 +83,37 @@ export const Shirts = () => {
               </div>
             ))}
           </div>
+
+          {seeMore ? (
+            <>
+              <MoreShirt />
+              <div className="flex items-center justify-center mb-20">
+                <Button
+                  onClick={toggleSeeMore}
+                  className="border border-[#2A2A2A] text-lg text-Charcoal-Gray py-2 px-5 rounded-lg"
+                >
+                  See Less
+                </Button>
+              </div>
+            </>
+          ) : (
+            <div className="flex items-center justify-center mb-20 mt-32">
+              <Button
+                onClick={toggleSeeMore}
+                className="border border-[#2A2A2A] text-lg text-Charcoal-Gray py-2 px-5 rounded-lg"
+              >
+                See More
+              </Button>
+            </div>
+          )}
         </Container>
         <div className="flex items-center justify-center mb-20">
-          <Link className="border border-[#2A2A2A] text-lg text-Charcoal-Gray py-2 px-5 rounded-lg">
+          {/* <Link
+            to={"/moreshirts"}
+            className="border border-[#2A2A2A] text-lg text-Charcoal-Gray py-2 px-5 rounded-lg"
+          >
             See More
-          </Link>
+          </Link> */}
         </div>
       </div>
 

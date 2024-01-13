@@ -180,3 +180,54 @@ export const testimonial = [
       "UrbanStyle is the go-to place for all my urban fashion needs. I love exploring their extensive selection of streetwear. The variety of styles and brands they offer is incredible. The website is easy to navigate, and I can always count on fast delivery. UrbanStyle has become my urban fashion haven",
   },
 ];
+
+export const moreShirts = [
+  {
+    id: 1,
+    img: DragonTshirt,
+    price: `${"$9.5"}`,
+    name: "Baseball shirt",
+    discription: "Duotone Thunder Dragons Baseball Design",
+    alt: "duotone-thunder-dragons-baseball-t-shirt-design",
+  },
+  {
+    id: 2,
+    img: ElegantMinding,
+    price: `${"$8.9"}`,
+    name: "Elegant MInd",
+    discription: "Elegant Minding Small Business Owner T-shirt",
+    alt: "elegant-minding-small-business-owner-t-shirt",
+  },
+  {
+    id: 3,
+    img: ManOrangeTshirt,
+    price: `${"$12"}`,
+    name: "Orange shirt",
+    discription: "Front View Man Posing Studio",
+    alt: "front-view-man-posing-studio",
+  },
+  {
+    id: 4,
+    img: Minimalist,
+    price: `${"$5"}`,
+    name: "Big Dream Shirt",
+    discription: "Minimalist Small Business Big Dreams T-shirt",
+    alt: "minimalist-small-business-big-dreams-t-shirt",
+  },
+  {
+    id: 5,
+    img: YoungMaleRedShirt,
+    price: `${"$11.5"}`,
+    name: "Red shirt",
+    discription: "front view young Male Red-shirt",
+    alt: "front-view-young-male-red-shirt-black-wall",
+  },
+  {
+    id: 6,
+    img: YoungManWithAfro,
+    price: `${"$10.5"}`,
+    name: "Clean White Shirt",
+    discription: "portrait young man with afro dreadlocks hairstyle",
+    alt: "portrait-young-man-with-afro-dreadlocks-hairstyle",
+  },
+];
