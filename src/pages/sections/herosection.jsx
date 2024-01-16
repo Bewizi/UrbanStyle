@@ -1,10 +1,21 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Flex, Side } from "../../components/basic/flex";
 import { Button } from "../../components/button";
 import { Container } from "../../components/container";
 import { imageSlider } from "../../constant";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+
+// import "./styles.css";
+
+// import required modules
+import { Autoplay, Pagination } from "swiper/modules";
 
 export const HeroSection = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -13,6 +24,7 @@ export const HeroSection = () => {
     setIsClicked(true);
     navigate("/menswear");
   };
+
   return (
     <>
       <Container className="com:container com:mx-auto">
@@ -41,16 +53,30 @@ export const HeroSection = () => {
         </Flex>
       </Container>
       <Container className="mb-40">
-        <Flex side={Side.Row} className=" justify-evenly flex-wrap sm:gap-y-10">
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination, Autoplay]}
+          className="mySwiper"
+        >
           {imageSlider.map((image, i) => (
-            <img
-              src={image.img}
-              alt={image.alt}
-              key={i}
-              className="hover:scale-105 transition-all duration-300 sm:w-80"
-            />
+            <SwiperSlide key={image.id}>
+              <img
+                src={image.img}
+                alt={image.alt}
+                key={i}
+                className={`hover:scale-105 transition-all duration-300  h-80 sm:w-96 sm:flex-wrap`}
+              />
+            </SwiperSlide>
           ))}
-        </Flex>
+        </Swiper>
       </Container>
     </>
   );

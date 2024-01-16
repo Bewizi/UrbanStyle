@@ -6,6 +6,7 @@ import { AboutUS } from "../pages/aboutus";
 import { Accessories } from "../pages/accessoriespage";
 import { FootWears } from "../pages/footwearpage";
 import { HomePage } from "../pages/home/homepage";
+import { ContactUs } from "../pages/information/contactus";
 import { MensWear } from "../pages/menswear";
 import { MoreShirt } from "../pages/products/moreshirts";
 import { Shirts } from "../pages/products/shirts";
@@ -51,6 +52,10 @@ export const routes = [
       {
         path: "/moreshirts",
         element: <MoreShirt />,
+      },
+      {
+        path: "/contactus",
+        element: <ContactUs />,
       },
       {
         path: "/products",

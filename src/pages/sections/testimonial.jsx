@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Bs } from "../../assets";
 import { Flex, Side } from "../../components/basic/flex";
 import { Button } from "../../components/button";
@@ -5,6 +6,7 @@ import { Container } from "../../components/container";
 import { testimonial } from "../../constant";
 
 export const Testimonials = () => {
+  const [value, setValue] = useState(0);
   return (
     <Container className="px-5 mb-24">
       <Container className="mb-10">
