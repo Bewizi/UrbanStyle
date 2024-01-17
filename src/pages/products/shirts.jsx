@@ -6,23 +6,14 @@ import { Container } from "../../components/container";
 import { Navigation } from "../../components/navigation";
 import { Footer } from "../home/footer";
 import { shirts } from "../../constant";
-import { Fa } from "../../assets";
-import { Button } from "../../components/button";
+import { Button, IconButton } from "../../components/button";
 import { MoreShirt } from "./moreshirts";
 
 export const Shirts = () => {
-  const [isclicked, setIsClicked] = useState(false);
-  const [clicked, setClicked] = useState(false);
   const [seeMore, setSeeMore] = useState(false);
 
   const toggleSeeMore = () => {
     setSeeMore(!seeMore);
-  };
-  const handleClick = () => {
-    setIsClicked(!isclicked);
-  };
-  const click = () => {
-    setClicked(!clicked);
   };
 
   return (
@@ -50,7 +41,7 @@ export const Shirts = () => {
         </Flex>
 
         <Container className="com:container com:mx-auto mb-28 sm:px-[5%] ">
-          <div className=" grid grid-cols-3 gap-10 sm:gap-x-5 sm:grid-cols-2">
+          <div className=" grid grid-cols-3 gap-10 sm:gap-x-5 sm:grid-cols-1">
             {shirts.map((shirt) => (
               <div key={shirt.id}>
                 <div className="bg-LightGray flex items-center justify-center rounded-lg ">
@@ -58,7 +49,7 @@ export const Shirts = () => {
                     <img
                       src={shirt.img}
                       alt={shirt.alt}
-                      className="object-cover h-60"
+                      className="object-cover h-96 w-60 sm:w-full"
                     />
                   </div>
                 </div>
@@ -66,19 +57,13 @@ export const Shirts = () => {
                   <span className="font-extralight">{shirt.name}</span>
                   <p className="font-bold">{shirt.price}</p>
                 </div>
-                <div className="w-64 font-semibold uppercase mb-2 sm:w-44">
+                <div className="w-64 font-semibold uppercase mb-2 sm:w-full">
                   <h4>{shirt.discription}</h4>
                 </div>
                 <div className="flex ">
-                  <Button onClick={handleClick} className="flex">
-                    <Fa.FaStar color={isclicked ? "#FFB906" : undefined} />
-                  </Button>
-                  <Button onClick={click}>
-                    <Fa.FaStar color={clicked ? "#FFB906" : undefined} />
-                  </Button>
-                  <Button>
-                    <Fa.FaStar />
-                  </Button>
+                  <IconButton />
+                  <IconButton />
+                  <IconButton />
                 </div>
               </div>
             ))}

@@ -1,11 +1,29 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Flex, Side } from "../../components/basic/flex";
 import { Container } from "../../components/container";
 import { products } from "../../constant";
-import { Fa, Io5 } from "../../assets";
+import { Bs, Fa, Io5 } from "../../assets";
+import { Button } from "../../components/button";
 // import { Button } from "../../components/button";
 
 export const OurProduct = () => {
+  const items = ["Shirt", "Accessories", "Jacket", "Footwear", "Cap", "Jeans"];
+  const itemsPerPage = 3;
+
+  const [currentPage, setCurrentPage] = useState(0);
+
+  const handlePrevClick = () => {
+    setCurrentPage((prevPage) => Math.max(prevPage - 1, 0));
+  };
+
+  const handleNextClick = () => {
+    const lastPage = Math.ceil(items.length / itemsPerPage) - 1;
+    setCurrentPage((prevPage) => Math.min(prevPage + 1, lastPage));
+  };
+
+  const startIndex = currentPage * itemsPerPage;
+  const visibleItems = items.slice(startIndex, startIndex + itemsPerPage);
   return (
     <>
       <Container className="com:container com:mx-auto mb-40 sm:mt-[35rem]">
@@ -17,33 +35,27 @@ export const OurProduct = () => {
             Let's find the best outfit for you
           </p>
         </Flex>
-        <div className="border-2 rounded-xl py-2 mb-10 sm:border-none">
+        <div className="border-2 rounded-xl py-2 com:mb-10 sm:mb-5 sm:border-none">
           <ul>
             <Flex
               side={Side.Row}
               className="justify-around items-center text-lg text-Sconce"
             >
-              <li className="link-hover">
-                <Link to={"/shirts"}>Shirt</Link>
-              </li>
-              <li className="link-hover">
-                <Link>Accessories</Link>
-              </li>
-              <li className="link-hover">
-                <Link>Jacket</Link>
-              </li>
-
-              <li className="link-hover sm:hidden">
-                <Link>Footwear</Link>
-              </li>
-              <li className="link-hover sm:hidden">
-                <Link>Cap</Link>
-              </li>
-              <li className="link-hover sm:hidden">
-                <Link>Jeans</Link>
-              </li>
+              {visibleItems.map((item, index) => (
+                <li key={index} className="link-hover">
+                  <Link to={`/${item.toLowerCase()}`}>{item}</Link>
+                </li>
+              ))}
             </Flex>
           </ul>
+        </div>
+        <div className="flex gap-x-3 justify-end items-center sm:justify-end sm:pr-[2%] sm:gap-x-8 mb-10 ">
+          <Button onClick={handlePrevClick}>
+            <Bs.BsArrowLeftShort className="border border-Charcoal-Gray rounded-full hover:bg-Charcoal-Gray hover:text-white hover:font-bold text-3xl " />
+          </Button>
+          <Button onClick={handleNextClick}>
+            <Bs.BsArrowRightShort className="border border-Charcoal-Gray rounded-full hover:bg-Charcoal-Gray hover:text-white hover:font-bold text-3xl" />
+          </Button>
         </div>
         <Container className="grid grid-cols-3 gap-5 mb-12 sm:grid-cols-2 sm:gap-y-10 sm:px-2">
           {products.map((product, index) => (

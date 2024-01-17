@@ -40,7 +40,7 @@ export const NewArrival = () => {
             <img
               src={Frame43}
               alt=""
-              className="w-96 h-96 sm:w-48 sm:h-48 object-cover"
+              className="w-96 h-96  sm:h-48  object-cover"
             />
           </div>
           <div className="flex absolute top-48 ml-80 sm:top-[12.5rem] sm:ml-0 ">
@@ -52,7 +52,7 @@ export const NewArrival = () => {
             <img
               src={Frame42}
               alt=""
-              className="w-96 h-96 object-cover sm:w-48 sm:h-48"
+              className="w-96 h-96 object-cover sm:h-48  "
             />
           </div>
         </div>

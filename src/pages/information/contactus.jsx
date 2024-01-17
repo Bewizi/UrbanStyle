@@ -63,6 +63,7 @@ export const ContactUs = () => {
           <Button>Send</Button>
         </Flex>
       </div>
+
       <footer>
         <Footer />
       </footer>

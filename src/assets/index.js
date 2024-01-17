@@ -35,6 +35,12 @@ import ManOrangeTshirt from "./images/shirt/front-view-man-posing-studio.png";
 import Minimalist from "./images/shirt/minimalist-small-business-big-dreams-t-shirt.png";
 import YoungMaleRedShirt from "./images/shirt/front-view-young-male-red-shirt-black-walljpg.png";
 import YoungManWithAfro from "./images/shirt/portrait-young-man-with-afro-dreadlocks-hairstyle.png";
+import ManOnWite from "./images/shirt/Men_s_White_Shirt.png";
+import ManWearingStripedPoloShirt from "./images/shirt/funky_afro_american_young_man_wearing_striped_polo_shirt.png";
+import CrewNeckTshirt from "./images/shirt/Crew-neck_T-shirt.png";
+import IanDooleyTshirt from "./images/shirt/ian-dooley.png";
+import WomanWearingStripedBlouse from "./images/shirt/funky_afro_american_young_woman_wearing_striped_blouse.png";
+import AdventureTshirt from "./images/shirt/simple-monocolor-find-your-adventure-t-shirt.png";
 
 export {
   // icons
@@ -78,4 +84,10 @@ export {
   Minimalist,
   YoungMaleRedShirt,
   YoungManWithAfro,
+  ManOnWite,
+  ManWearingStripedPoloShirt,
+  CrewNeckTshirt,
+  IanDooleyTshirt,
+  WomanWearingStripedBlouse,
+  AdventureTshirt,
 };
