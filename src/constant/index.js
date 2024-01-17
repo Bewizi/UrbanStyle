@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   AdventureTshirt,
   ColourfulShirt,
@@ -237,3 +238,5 @@ export const moreShirts = [
     alt: "simple-monocolor-find-your-adventure-t-shirt",
   },
 ];
+
+export const linkItems = {};

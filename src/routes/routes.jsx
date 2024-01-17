@@ -1,7 +1,7 @@
 // import LandingPage from "../components/landingpage";
 
-import Product from "../components/product";
-import Products from "../components/products";
+// import Product from "../components/product";
+// import Products from "../components/products";
 import { AboutUS } from "../pages/aboutus";
 import { Accessories } from "../pages/accessoriespage";
 import { FootWears } from "../pages/footwearpage";
@@ -57,19 +57,20 @@ export const routes = [
         path: "/contactus",
         element: <ContactUs />,
       },
-      {
-        path: "/products",
-        children: [
-          {
-            index: true,
-            element: <Products />,
-          },
-          {
-            path: "/products/:id",
-            element: <Product />,
-          },
-        ],
-      },
+
+      // {
+      //   path: "/products",
+      //   children: [
+      //     {
+      //       element: <Products />,
+      //       index: true,
+      //     },
+      //     {
+      //       path: "/products/:id",
+      //       element: <Product />,
+      //     },
+      //   ],
+      // },
     ],
   },
 ];

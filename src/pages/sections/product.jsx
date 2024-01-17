@@ -5,10 +5,10 @@ import { Container } from "../../components/container";
 import { products } from "../../constant";
 import { Bs, Fa, Io5 } from "../../assets";
 import { Button } from "../../components/button";
-// import { Button } from "../../components/button";
+import { LinkItems } from "../productlistitems";
 
 export const OurProduct = () => {
-  const items = ["Shirt", "Accessories", "Jacket", "Footwear", "Cap", "Jeans"];
+  const itemsArray = Object.entries(LinkItems);
   const itemsPerPage = 3;
 
   const [currentPage, setCurrentPage] = useState(0);
@@ -18,12 +18,12 @@ export const OurProduct = () => {
   };
 
   const handleNextClick = () => {
-    const lastPage = Math.ceil(items.length / itemsPerPage) - 1;
+    const lastPage = Math.ceil(itemsArray.length / itemsPerPage) - 1;
     setCurrentPage((prevPage) => Math.min(prevPage + 1, lastPage));
   };
 
   const startIndex = currentPage * itemsPerPage;
-  const visibleItems = items.slice(startIndex, startIndex + itemsPerPage);
+  const visibleItems = itemsArray.slice(startIndex, startIndex + itemsPerPage);
   return (
     <>
       <Container className="com:container com:mx-auto mb-40 sm:mt-[35rem]">
@@ -41,9 +41,9 @@ export const OurProduct = () => {
               side={Side.Row}
               className="justify-around items-center text-lg text-Sconce"
             >
-              {visibleItems.map((item, index) => (
+              {visibleItems.map(([key, value], index) => (
                 <li key={index} className="link-hover">
-                  <Link to={`/${item.toLowerCase()}`}>{item}</Link>
+                  <Link to={`/${key.toLowerCase()}`}>{value}</Link>
                 </li>
               ))}
             </Flex>
