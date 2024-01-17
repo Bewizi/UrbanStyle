@@ -3,7 +3,9 @@
 // import Product from "../components/product";
 // import Products from "../components/products";
 import { AboutUS } from "../pages/aboutus";
-import { Accessories } from "../pages/accessoriespage";
+import { Accessories } from "../pages/accessories/accessoriespage";
+import { WristWatch } from "../pages/accessories/categories/wristwatch";
+
 import { FootWears } from "../pages/footwearpage";
 import { HomePage } from "../pages/home/homepage";
 import { ContactUs } from "../pages/information/contactus";
@@ -57,7 +59,19 @@ export const routes = [
         path: "/contactus",
         element: <ContactUs />,
       },
-
+      {
+        path: "/accessoriespage",
+        children: [
+          {
+            element: <Accessories />,
+            index: true,
+          },
+          {
+            path: "/accessoriespage/",
+            element: <WristWatch />,
+          },
+        ],
+      },
       // {
       //   path: "/products",
       //   children: [

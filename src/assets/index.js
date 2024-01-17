@@ -42,6 +42,13 @@ import IanDooleyTshirt from "./images/shirt/ian-dooley.png";
 import WomanWearingStripedBlouse from "./images/shirt/funky_afro_american_young_woman_wearing_striped_blouse.png";
 import AdventureTshirt from "./images/shirt/simple-monocolor-find-your-adventure-t-shirt.png";
 
+// wristwatch
+import GoldenWatch from "./images/wristwatch/closeup-shot-golden-watch-isolated.jpg";
+import HandmanWristWatch from "./images/wristwatch/hand-man-wrist-watch.jpg";
+import SmartWatch from "./images/wristwatch/smart-watch-realistic-image-black.jpg";
+import ElegantWatch from "./images/wristwatch/elegant-watch-with-silver-golden-chain-isolated.jpg";
+import SilverWatch from "./images/wristwatch/elegant-watch-with-silver-golden-chain-lights-isolated.jpg";
+
 export {
   // icons
   Ci,
@@ -90,4 +97,11 @@ export {
   IanDooleyTshirt,
   WomanWearingStripedBlouse,
   AdventureTshirt,
+
+  // wristwatch
+  GoldenWatch,
+  HandmanWristWatch,
+  SmartWatch,
+  ElegantWatch,
+  SilverWatch,
 };

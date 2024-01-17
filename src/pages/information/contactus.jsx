@@ -7,6 +7,8 @@ import { Navigation } from "../../components/navigation";
 import { Button } from "../../components/button";
 import { Footer } from "../home/footer";
 
+import { imageSlider } from "../../constant";
+
 export const ContactUs = () => {
   return (
     <>

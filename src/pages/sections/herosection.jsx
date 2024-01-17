@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Flex, Side } from "../../components/basic/flex";
@@ -24,6 +24,18 @@ export const HeroSection = () => {
     setIsClicked(true);
     navigate("/menswear");
   };
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    // Create an interval to change the activeIndex every 3000 milliseconds (3 seconds)
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % imageSlider.length);
+    }, 3000);
+
+    // Clear the interval on component unmount to avoid memory leaks
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
@@ -64,7 +76,7 @@ export const HeroSection = () => {
             clickable: true,
           }}
           modules={[Pagination, Autoplay]}
-          className="mySwiper"
+          className="mySwiper sm:hidden"
         >
           {imageSlider.map((image, i) => (
             <SwiperSlide key={image.id}>
@@ -72,11 +84,29 @@ export const HeroSection = () => {
                 src={image.img}
                 alt={image.alt}
                 key={i}
-                className={`hover:scale-105 transition-all duration-300  h-80 sm:w-96 sm:flex-wrap`}
+                className={`hover:scale-105 transition-all duration-300  h-80 sm:w-full `}
               />
             </SwiperSlide>
           ))}
         </Swiper>
+
+        <Container className="mb-40">
+          <Flex
+            side={Side.Row}
+            className="justify-evenly flex-wrap sm:gap-y-10"
+          >
+            {imageSlider.map((image, i) => (
+              <img
+                src={image.img}
+                alt={image.alt}
+                key={i}
+                className={`${
+                  i === activeIndex ? "block" : "hidden"
+                } h-1/5 w-1/5 bg-contain hover:scale-105 transition-all duration-300  sm:w-3/4 sm:h-3/4`}
+              />
+            ))}
+          </Flex>
+        </Container>
       </Container>
     </>
   );

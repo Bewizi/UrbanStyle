@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
 import {
   AdventureTshirt,
   ColourfulShirt,
   CrewNeckTshirt,
   DragonTshirt,
   ElegantMinding,
+  ElegantWatch,
   Ellipse1,
   Ellipse2,
   Ellipse3,
@@ -12,6 +12,8 @@ import {
   Frame29,
   Frame30,
   Frame31,
+  GoldenWatch,
+  HandmanWristWatch,
   HandsomeStylish,
   IanDooleyTshirt,
   ManInBlack,
@@ -21,6 +23,8 @@ import {
   ManPosing,
   ManWearingStripedPoloShirt,
   Minimalist,
+  SilverWatch,
+  SmartWatch,
   Tshirt,
   WomanWearingStripedBlouse,
   YoungMaleRedShirt,
@@ -239,4 +243,45 @@ export const moreShirts = [
   },
 ];
 
-export const linkItems = {};
+export const writstWatch = [
+  {
+    id: 1,
+    image: GoldenWatch,
+    alt: "closeup-shot-golden-watch-isolated",
+    name: "GoldenWatch",
+    price: `${"$100.89"}`,
+    discription: "Closeup Shot Golden Watch",
+  },
+  {
+    id: 2,
+    image: HandmanWristWatch,
+    alt: "hand-man-wrist-watch",
+    name: "Handman Wrist Watch",
+    price: `${"$50"}`,
+    discription: "Hand Man Wrist Watch",
+  },
+  {
+    id: 3,
+    image: SmartWatch,
+    alt: "smart-watch-realistic-image-black",
+    name: "Smart Wrist Watch",
+    price: `${"$80"}`,
+    discription: "Smart Watch Realistic Image Black",
+  },
+  {
+    id: 4,
+    image: ElegantWatch,
+    alt: "elegant-watch-with-silver-golden-chain",
+    name: "Elegant Wrist Watch",
+    price: `${"$150.90"}`,
+    discription: "Elegant Wrist Watch With Silver Golden Chain",
+  },
+  {
+    id: 5,
+    image: SilverWatch,
+    alt: "elegant-watch-with-silver-golden-chain",
+    name: "Silver Golden Watch",
+    price: `${"$250.90"}`,
+    discription: "Elegant Wrist Watch With Silver Golden Chain",
+  },
+];
