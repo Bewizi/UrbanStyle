@@ -67,7 +67,7 @@ export const routes = [
             index: true,
           },
           {
-            path: "/accessoriespage/",
+            path: "/accessoriespage/:id",
             element: <WristWatch />,
           },
         ],

@@ -11,6 +11,7 @@ import { Testimonials } from "../sections/testimonial";
 import { Footer } from "./footer";
 import { CiSearch } from "react-icons/ci";
 import { SearchInput } from "../../components/searchinput";
+import { Cart } from "../../components/cart";
 
 export const HomePage = () => {
   return (
@@ -34,6 +35,7 @@ export const HomePage = () => {
           </div>
 
           <Navigation />
+          <Cart />
         </Flex>
       </Container>
       <HeroSection />

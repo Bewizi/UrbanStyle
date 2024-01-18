@@ -90,7 +90,7 @@ export const HeroSection = () => {
           ))}
         </Swiper>
 
-        <Container className="mb-40">
+        <Container className="mb-40 com:hidden">
           <Flex
             side={Side.Row}
             className="justify-evenly flex-wrap sm:gap-y-10"

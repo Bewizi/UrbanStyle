@@ -25,6 +25,7 @@ import {
   Minimalist,
   SilverWatch,
   SmartWatch,
+  TimeChangeWatch,
   Tshirt,
   WomanWearingStripedBlouse,
   YoungMaleRedShirt,
@@ -283,5 +284,24 @@ export const writstWatch = [
     name: "Silver Golden Watch",
     price: `${"$250.90"}`,
     discription: "Elegant Wrist Watch With Silver Golden Chain",
+  },
+  {
+    id: 6,
+    image: TimeChangeWatch,
+    alt: "close-up-clock-with-time-change",
+    name: "Time Change Wrist Watch",
+    price: `${"$200"}`,
+    discription: "close up clock with time change",
+  },
+];
+
+export const moreWatches = [
+  {
+    id: 1,
+    image: TimeChangeWatch,
+    alt: "close-up-clock-with-time-change",
+    name: "Time Change Wrist Watch",
+    price: `${"$200"}`,
+    discription: "close up clock with time change",
   },
 ];

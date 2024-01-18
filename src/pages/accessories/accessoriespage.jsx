@@ -3,6 +3,8 @@ import { Container } from "../../components/container";
 import { Flex, Side } from "../../components/basic/flex";
 import { Navigation } from "../../components/navigation";
 import { writstWatch } from "../../constant";
+import { Footer } from "../home/footer";
+import { Button } from "../../components/button";
 // import { Button, IconButton } from "../../components/button";
 
 export const Accessories = () => {
@@ -20,7 +22,7 @@ export const Accessories = () => {
         </Flex>
       </Container>
       <div>
-        <div>
+        <div className="mb-16">
           <Flex className="justify-center items-center mb-10 sm:px-[5%]">
             <h1 className="text-6xl font-bold mb-2">Accessories</h1>
             <div>
@@ -35,24 +37,24 @@ export const Accessories = () => {
         <Container className="container mx-auto">
           <Container>
             <div className="flex justify-center">
-              <h1 className="text-6xl font-bold mb-2">WristWatch</h1>
+              <h1 className="text-6xl font-bold mb-20">WristWatch</h1>
             </div>
 
-            <div className="grid grid-cols-3 gap-5">
+            <div className="grid grid-cols-3 gap-16">
               {writstWatch.map((wristwatchs) => (
                 <div key={wristwatchs.id}>
-                  <div className="bg-LightGray flex items-center justify-center">
+                  <div className=" flex items-center justify-center mb-5">
                     <img
                       src={wristwatchs.image}
                       alt={wristwatchs.alt}
                       className=" h-80"
                     />
                   </div>
-                  <div className="flex  justify-between items-center">
+                  <div className="flex  justify-between items-center mb-5">
                     <p className="font-extralight">{wristwatchs.name}</p>
                     <span className="font-bold">{wristwatchs.price}</span>
                   </div>
-                  <h2 className="text-xl w-52 font-extrabold">
+                  <h2 className="text-xl w-52 font-extrabold capitalize">
                     {wristwatchs.discription}
                   </h2>
                 </div>
@@ -62,9 +64,20 @@ export const Accessories = () => {
           {/* <div>Wrist Watch</div>
           <div>Belts</div>
           <div>Sunglasses</div> */}
-          {/* <Link to={"/wristwatch"}>WristWatch</Link> */}
+          <div className="flex justify-center items-center my-24">
+            <Button className="border border-[#2A2A2A] text-lg text-Charcoal-Gray py-2 px-5 rounded-lg flex justify-center items-center">
+              <Link to={"/accessoriespage/wristwatch"}>Shop More</Link>
+            </Button>
+          </div>
         </Container>
       </div>
+
+      {/* footer  */}
+      <Container>
+        <footer>
+          <Footer />
+        </footer>
+      </Container>
     </>
   );
 };

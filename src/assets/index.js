@@ -43,11 +43,12 @@ import WomanWearingStripedBlouse from "./images/shirt/funky_afro_american_young_
 import AdventureTshirt from "./images/shirt/simple-monocolor-find-your-adventure-t-shirt.png";
 
 // wristwatch
-import GoldenWatch from "./images/wristwatch/closeup-shot-golden-watch-isolated.jpg";
-import HandmanWristWatch from "./images/wristwatch/hand-man-wrist-watch.jpg";
-import SmartWatch from "./images/wristwatch/smart-watch-realistic-image-black.jpg";
-import ElegantWatch from "./images/wristwatch/elegant-watch-with-silver-golden-chain-isolated.jpg";
-import SilverWatch from "./images/wristwatch/elegant-watch-with-silver-golden-chain-lights-isolated.jpg";
+import GoldenWatch from "./images/wristwatch/closeup-shot-golden-watch-isolated.png";
+import HandmanWristWatch from "./images/wristwatch/hand-man-wrist-watch.png";
+import SmartWatch from "./images/wristwatch/smart-watch-realistic-image-black.png";
+import ElegantWatch from "./images/wristwatch/elegant-watch-with-silver-golden-chain-isolated.png";
+import SilverWatch from "./images/wristwatch/elegant-watch-with-silver-golden-chain-lights-isolated.png";
+import TimeChangeWatch from "./images/wristwatch/close-up-clock-with-time-change.png";
 
 export {
   // icons
@@ -104,4 +105,5 @@ export {
   SmartWatch,
   ElegantWatch,
   SilverWatch,
+  TimeChangeWatch,
 };
