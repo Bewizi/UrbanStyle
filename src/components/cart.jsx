@@ -20,7 +20,7 @@ export const Cart = () => {
         <Ci.CiShoppingCart className="text-3xl" />
       </Button>
       {cartOpen && (
-        <div className=" bg-gray-400 fixed right-0 bottom-0 top-0 w-72 sm:w-2">
+        <div className=" bg-gray-400 fixed right-0 bottom-0 top-0 w-72 sm:w-56">
           <div className="text-white">
             <p>hello</p>
             <p>world</p>
