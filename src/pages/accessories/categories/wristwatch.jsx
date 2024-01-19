@@ -4,6 +4,8 @@ import { Container } from "../../../components/container";
 import { Navigation } from "../../../components/navigation";
 import { Cart } from "../../../components/cart";
 
+import { moreWatches } from "../../../constant";
+
 export const WristWatch = () => {
   return (
     <>
@@ -20,15 +22,31 @@ export const WristWatch = () => {
         </Flex>
       </Container>
       <div>
-        <h1>wrist watch</h1>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eum
-            mollitia suscipit ex ipsam error assumenda neque nihil nostrum!
-            Assumenda sit accusantium inventore aperiam dolores maiores, neque
-            adipisci. Odit, voluptates!
-          </p>
+        <div className="px-[5%]  grid grid-cols-3 gap-5 sm:grid-cols-1 sm:gap-y-28">
+          {moreWatches.map((morewatch) => (
+            <div key={morewatch.id}>
+              <div className="flex items-center justify-center mb-5 sm:mb-0">
+                <img
+                  src={morewatch.image}
+                  alt={morewatch.alt}
+                  className="h-80 object-cover"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-between ">
+                <p className="font-extralight">{morewatch.name}</p>
+                <span className="font-bold">{morewatch.price}</span>
+                <div>
+                  <h3 className="text-2xl capitalize font-bold w-64 mt-5 text-center">
+                    {morewatch.discription}
+                  </h3>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
+        <Container className="container mx-auto">
+          <div className="grid grid-cols-3 gap-5"></div>
+        </Container>
       </div>
     </>
   );

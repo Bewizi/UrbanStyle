@@ -50,6 +50,11 @@ import ElegantWatch from "./images/wristwatch/elegant-watch-with-silver-golden-c
 import SilverWatch from "./images/wristwatch/elegant-watch-with-silver-golden-chain-lights-isolated.png";
 import TimeChangeWatch from "./images/wristwatch/close-up-clock-with-time-change.png";
 
+// morewristwatcs
+import DigitalWatch from "./images/wristwatch/smartwatch-screen-digital-device.png";
+import ClassicWatch from "./images/wristwatch/classic-watches-interface.png";
+import BlackLetherWatch from "./images/wristwatch/stylish-black-watch-white-surface.png";
+
 export {
   // icons
   Ci,
@@ -106,4 +111,9 @@ export {
   ElegantWatch,
   SilverWatch,
   TimeChangeWatch,
+
+  // morewristwatch
+  DigitalWatch,
+  ClassicWatch,
+  BlackLetherWatch,
 };

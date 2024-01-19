@@ -102,7 +102,7 @@ export const HeroSection = () => {
                 key={i}
                 className={`${
                   i === activeIndex ? "block" : "hidden"
-                } h-1/5 w-1/5 bg-contain hover:scale-105 transition-all duration-300  sm:w-3/4 sm:h-3/4`}
+                } h-1/5 w-1/5 bg-contain hover:scale-105 transition-all duration-300  sm:w-80 sm:h-80 px-[5%]`}
               />
             ))}
           </Flex>

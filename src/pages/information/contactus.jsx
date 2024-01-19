@@ -4,7 +4,7 @@ import { SearchInput } from "../../components/searchinput";
 import { Container } from "../../components/container";
 import { Flex, Side } from "../../components/basic/flex";
 import { Navigation } from "../../components/navigation";
-import { Button } from "../../components/button";
+
 import { Footer } from "../home/footer";
 
 export const ContactUs = () => {
@@ -49,18 +49,6 @@ export const ContactUs = () => {
               fuga. Molestiae, facilis non.
             </p>
           </div>
-          <Form>
-            <SearchInput placeholder="Full Name" type="text" />
-            <SearchInput placeholder="Email" type="email" />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="meassage"
-            ></textarea>
-          </Form>
-          <Button>Send</Button>
         </Flex>
       </div>
 

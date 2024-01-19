@@ -1,7 +1,10 @@
 import {
   AdventureTshirt,
+  BlackLetherWatch,
+  ClassicWatch,
   ColourfulShirt,
   CrewNeckTshirt,
+  DigitalWatch,
   DragonTshirt,
   ElegantMinding,
   ElegantWatch,
@@ -298,10 +301,26 @@ export const writstWatch = [
 export const moreWatches = [
   {
     id: 1,
-    image: TimeChangeWatch,
-    alt: "close-up-clock-with-time-change",
-    name: "Time Change Wrist Watch",
+    image: DigitalWatch,
+    alt: "DigitalWatch",
+    name: "Apple Watch",
     price: `${"$200"}`,
-    discription: "close up clock with time change",
+    discription: "apple digital watch",
+  },
+  {
+    id: 2,
+    image: ClassicWatch,
+    alt: "Classic Watch",
+    name: "Classic Watch",
+    price: `${"$150"}`,
+    discription: "black classic watch",
+  },
+  {
+    id: 3,
+    image: BlackLetherWatch,
+    alt: "Black Lether Watch",
+    name: "Lether Watch",
+    price: `${"$300"}`,
+    discription: "black lether watch",
   },
 ];

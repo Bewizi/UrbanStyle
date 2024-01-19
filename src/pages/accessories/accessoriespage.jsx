@@ -24,9 +24,9 @@ export const Accessories = () => {
       <div>
         <div className="mb-16">
           <Flex className="justify-center items-center mb-10 sm:px-[5%]">
-            <h1 className="text-6xl font-bold mb-2">Accessories</h1>
+            <h1 className="text-6xl font-bold mb-2 sm:text-4xl">Accessories</h1>
             <div>
-              <p className="text-xl font-light sm:text-center">
+              <p className="text-xl font-light sm:text-center sm:text-base">
                 Elevate your style, one accessory at a time - where every detail
                 speaks volumes.
               </p>
@@ -34,13 +34,15 @@ export const Accessories = () => {
           </Flex>
         </div>
         {/* <h1 className="text-3xl font-bold">Accessories</h1> */}
-        <Container className="container mx-auto">
+        <Container className="com:container com:mx-auto px-[5%]">
           <Container>
             <div className="flex justify-center">
-              <h1 className="text-6xl font-bold mb-20">WristWatch</h1>
+              <h1 className="text-6xl font-bold mb-20 sm:text-2xl">
+                WristWatch
+              </h1>
             </div>
 
-            <div className="grid grid-cols-3 gap-16">
+            <div className="grid grid-cols-3 gap-16 sm:grid-cols-1">
               {writstWatch.map((wristwatchs) => (
                 <div key={wristwatchs.id}>
                   <div className=" flex items-center justify-center mb-5">

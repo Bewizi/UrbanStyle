@@ -4,7 +4,7 @@ import { Flex, Side } from "../../components/basic/flex";
 import { Container } from "../../components/container";
 import { products } from "../../constant";
 import { Bs, Fa, Io5 } from "../../assets";
-import { Button } from "../../components/button";
+import { Button, LikeButton } from "../../components/button";
 import { LinkItems } from "../productlistitems";
 
 export const OurProduct = () => {
@@ -57,16 +57,16 @@ export const OurProduct = () => {
             <Bs.BsArrowRightShort className="border border-Charcoal-Gray rounded-full hover:bg-Charcoal-Gray hover:text-white hover:font-bold text-3xl" />
           </Button>
         </div>
-        <Container className="grid grid-cols-3 gap-5 mb-12 sm:grid-cols-2 sm:gap-y-10 sm:px-2">
+        <Container className="grid grid-cols-3 gap-5 mb-12 sm:grid-cols-1 sm:gap-y-10 sm:px-2">
           {products.map((product, index) => (
             <div key={index}>
-              <div className="relative mb-3 bg-[#F5F5F5] rounded-lg sm:pt-0">
+              <div className="relative mb-3 bg-[#F5F5F5] rounded-lg sm:pt-0 flex items-center justify-center">
                 <img
                   src={product.img}
                   alt={product.alt}
-                  className="object-cover w-80 h-[29rem] sm:w-40 sm:h-40 pt-10  sm:px-5 "
+                  className="object-cover w-80 h-[29rem] sm:w-full sm:h-full  pt-10   sm:px-[5%] "
                 />
-                <Io5.IoHeartOutline className="absolute top-2 right-5 text-4xl bg-white p-2 rounded-full" />
+                <LikeButton />
               </div>
               <div className="flex justify-between items-center mb-5 ">
                 <Link className="text-Gunmetal hover:underline font-light">
@@ -74,7 +74,7 @@ export const OurProduct = () => {
                 </Link>
                 <p className="font-bold">{product.price}</p>
               </div>
-              <h3 className="font-bold text-2xl w-64 mb-3 sm:text-base sm:w-44">
+              <h3 className="font-bold text-2xl w-64 mb-3  sm:w-full ">
                 {product.description}
               </h3>
               <div className="flex  items-center gap-3">
